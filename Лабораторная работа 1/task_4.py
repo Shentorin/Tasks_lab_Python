@@ -47,14 +47,14 @@ for territories in list_territories:
     value = value.green_index
     green_index_new_list.append(value)
 
-    def filter_min_green_index(green_index_new_list, min_value = 0.1):
+def filter_min_green_index(green_index_new_list, min_value = 0.1):
 
-        counter_for_min_value = 0
+    counter_for_min_value = 0
 
-        for item in green_index_new_list:
-            if item > min_value:
-                counter_for_min_value += 1
+    for item in green_index_new_list:
+        if item > min_value:
+            counter_for_min_value += 1
 
-            return counter_for_min_value
+    return counter_for_min_value
 
-    print(filter_min_green_index(green_index_new_list))
+print(filter_min_green_index(green_index_new_list))
